@@ -1,0 +1,98 @@
+2015-11-26 오후 12:18:34|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                             GET / HTTP/1.1
+                             User-Agent: websocket-sharp/1.0
+                             Host: localhost:8080
+                             Upgrade: websocket
+                             Connection: Upgrade
+                             Sec-WebSocket-Key: h5Y+eZQkkks+NDxv2QAE8g==
+                             Sec-WebSocket-Protocol: echo-protocol
+                             Sec-WebSocket-Version: 13
+2015-11-26 오후 12:18:34|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                             HTTP/1.1 101 Switching Protocols
+                             Upgrade: websocket
+                             Connection: Upgrade
+                             Sec-WebSocket-Accept: M/8J5P7sEGTDW0aWYcGcMGJEwdE=
+                             Sec-WebSocket-Protocol: echo-protocol
+2015-11-26 오후 12:18:35|Fatal|WebSocket.processException:0|System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+                                at System.Windows.Threading.Dispatcher.VerifyAccess()
+                                at System.Windows.Threading.Dispatcher.DisableProcessing()
+                                at System.Windows.Documents.TextContainer.BeginChange(Boolean undo)
+                                at System.Windows.Documents.TextContainer.System.Windows.Documents.ITextContainer.BeginChange()
+                                at System.Windows.Documents.TextRangeBase.BeginChangeWorker(ITextRange thisRange, String description)
+                                at System.Windows.Documents.TextRangeBase.SetText(ITextRange thisRange, String textData)
+                                at System.Windows.Documents.TextRange.System.Windows.Documents.ITextRange.set_Text(String value)
+                                at System.Windows.Controls.Primitives.TextBoxBase.AppendText(String textData)
+                                at NodeJS_Client.MainWindow.ServerToClient_OnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Client\MainWindow.xaml.cs:line 65
+                                at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                                at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-11-26 오후 12:18:35|Trace|WebSocket.close:0|Begin closing the connection.
+2015-11-26 오후 12:18:35|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                               sent: False
+                               received: True
+2015-11-26 오후 12:18:35|Trace|WebSocket.close:0|End closing the connection.
+2015-11-26 오후 12:18:35|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                                at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                                at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-11-26 오후 12:18:35|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-11-26 오후 12:18:35|Fatal|WebSocket.close:0|System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+                                at System.Windows.Threading.Dispatcher.VerifyAccess()
+                                at System.Windows.Threading.Dispatcher.DisableProcessing()
+                                at System.Windows.Documents.TextContainer.BeginChange(Boolean undo)
+                                at System.Windows.Documents.TextContainer.System.Windows.Documents.ITextContainer.BeginChange()
+                                at System.Windows.Documents.TextRangeBase.BeginChangeWorker(ITextRange thisRange, String description)
+                                at System.Windows.Documents.TextRangeBase.SetText(ITextRange thisRange, String textData)
+                                at System.Windows.Documents.TextRange.System.Windows.Documents.ITextRange.set_Text(String value)
+                                at System.Windows.Controls.Primitives.TextBoxBase.AppendText(String textData)
+                                at NodeJS_Client.MainWindow.ServerToClient_Disconnected(Object sender, CloseEventArgs e) in C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Client\MainWindow.xaml.cs:line 70
+                                at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                                at WebSocketSharp.WebSocket.close(CloseEventArgs e, Boolean send, Boolean wait)
+2015-11-26 오후 12:18:55|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                             GET / HTTP/1.1
+                             User-Agent: websocket-sharp/1.0
+                             Host: localhost:8080
+                             Upgrade: websocket
+                             Connection: Upgrade
+                             Sec-WebSocket-Key: U+vPET6/xej9A1UOar7J9A==
+                             Sec-WebSocket-Protocol: echo-protocol
+                             Sec-WebSocket-Version: 13
+2015-11-26 오후 12:18:55|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                             HTTP/1.1 101 Switching Protocols
+                             Upgrade: websocket
+                             Connection: Upgrade
+                             Sec-WebSocket-Accept: w9I/yjSpRPCN2RaFFw1c96zSkWk=
+                             Sec-WebSocket-Protocol: echo-protocol
+2015-11-26 오후 12:18:56|Fatal|WebSocket.processException:0|System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+                                at System.Windows.Threading.Dispatcher.VerifyAccess()
+                                at System.Windows.Threading.Dispatcher.DisableProcessing()
+                                at System.Windows.Documents.TextContainer.BeginChange(Boolean undo)
+                                at System.Windows.Documents.TextContainer.System.Windows.Documents.ITextContainer.BeginChange()
+                                at System.Windows.Documents.TextRangeBase.BeginChangeWorker(ITextRange thisRange, String description)
+                                at System.Windows.Documents.TextRangeBase.SetText(ITextRange thisRange, String textData)
+                                at System.Windows.Documents.TextRange.System.Windows.Documents.ITextRange.set_Text(String value)
+                                at System.Windows.Controls.Primitives.TextBoxBase.AppendText(String textData)
+                                at NodeJS_Client.MainWindow.ServerToClient_OnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Client\MainWindow.xaml.cs:line 65
+                                at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                                at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-11-26 오후 12:18:56|Trace|WebSocket.close:0|Begin closing the connection.
+2015-11-26 오후 12:18:56|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                               sent: False
+                               received: True
+2015-11-26 오후 12:18:56|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                                at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                                at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-11-26 오후 12:18:56|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-11-26 오후 12:18:56|Trace|WebSocket.close:0|End closing the connection.
+2015-11-26 오후 12:18:56|Fatal|WebSocket.close:0|System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+                                at System.Windows.Threading.Dispatcher.VerifyAccess()
+                                at System.Windows.Threading.Dispatcher.DisableProcessing()
+                                at System.Windows.Documents.TextContainer.BeginChange(Boolean undo)
+                                at System.Windows.Documents.TextContainer.System.Windows.Documents.ITextContainer.BeginChange()
+                                at System.Windows.Documents.TextRangeBase.BeginChangeWorker(ITextRange thisRange, String description)
+                                at System.Windows.Documents.TextRangeBase.SetText(ITextRange thisRange, String textData)
+                                at System.Windows.Documents.TextRange.System.Windows.Documents.ITextRange.set_Text(String value)
+                                at System.Windows.Controls.Primitives.TextBoxBase.AppendText(String textData)
+                                at NodeJS_Client.MainWindow.ServerToClient_Disconnected(Object sender, CloseEventArgs e) in C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Client\MainWindow.xaml.cs:line 70
+                                at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                                at WebSocketSharp.WebSocket.close(CloseEventArgs e, Boolean send, Boolean wait)
+2015-11-26 오후 12:18:57|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+2015-11-26 오후 12:18:57|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
