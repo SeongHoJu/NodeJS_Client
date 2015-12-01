@@ -44,12 +44,8 @@ namespace NodeJS_Client
         {
             InitializeComponent();
 
+            ConnectAddress = "ws://localhost:8080";
             WebConnector = new WebConnect();
-
-            //ConnectAddress = "ws://localhost:8080";
-            ConnectAddress = "ws://192.168.102.116:8080";
-
-            WebConnector.ConnectWebSocket(ConnectAddress);
             WebConnector.appWin = this;
         }
 
@@ -81,6 +77,11 @@ namespace NodeJS_Client
             LoginPacket.AddPacket(InputPassword);
 
             WebConnector.SendPacket(LoginPacket);
+        }
+
+        private void ConnectButton_Click(object sender, RoutedEventArgs e)
+        {
+            WebConnector.ReConnectWebSocket(ConnectAddress);
         }
 
         public delegate void LogDelegate(string arg);

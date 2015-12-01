@@ -9,11 +9,11 @@
     <Grid Margin="0,-4,2,6">
         <Button x:Name="SendString" Content="Send" HorizontalAlignment="Left" Margin="426,306,0,0" VerticalAlignment="Top" Width="75" Click="SendString_Click"/>
         <TextBox x:Name="ChatInputBox" HorizontalAlignment="Left" Height="23" Margin="24,306,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="382"/>
-        <TextBox x:Name="Input_ID" HorizontalAlignment="Left" Height="26" Margin="47,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="Input_ID" HorizontalAlignment="Left" Height="26" Margin="47,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
         <Label x:Name="Label_ID" Content="ID&#xD;&#xA;" HorizontalAlignment="Left" Margin="18,23,0,0" VerticalAlignment="Top" Width="24" Height="28" RenderTransformOrigin="0.494,0.447"/>
-        <Label x:Name="Label_Password" Content="Password&#xA;" HorizontalAlignment="Left" Margin="209,23,0,0" VerticalAlignment="Top" Width="63" Height="28" RenderTransformOrigin="0.494,0.447"/>
-        <PasswordBox x:Name="Input_Password" HorizontalAlignment="Left" Margin="277,25,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
-        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="426,25,0,0" VerticalAlignment="Top" Width="75" Height="26" RenderTransformOrigin="-0.004,0.565" Click="LoginButton_Click"/>
+        <Label x:Name="Label_Password" Content="Password&#xA;" HorizontalAlignment="Left" Margin="169,23,0,0" VerticalAlignment="Top" Width="63" Height="28" RenderTransformOrigin="0.494,0.447"/>
+        <PasswordBox x:Name="Input_Password" HorizontalAlignment="Left" Margin="237,25,0,0" VerticalAlignment="Top" Width="96" Height="26"/>
+        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="347,25,0,0" VerticalAlignment="Top" Width="75" Height="26" RenderTransformOrigin="-0.004,0.565" Click="LoginButton_Click"/>
         <ListView x:Name="List_ConnectUser" HorizontalAlignment="Left" Height="95" Margin="24,334,0,0" VerticalAlignment="Top" Width="477">
             <ListView.View>
                 <GridView>
@@ -21,7 +21,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListBox x:Name="ServerLog" HorizontalAlignment="Left" Height="237" VerticalAlignment="Top" Width="477" Margin="24,64,0,0" IsEnabled="False"/>
+        <ListBox x:Name="ServerLog" HorizontalAlignment="Left" Height="233" VerticalAlignment="Top" Width="477" Margin="24,68,0,0" IsEnabled="False"/>
+        <Button x:Name="ConnectButton" Content="Connect" HorizontalAlignment="Left" Margin="427,25,0,0" VerticalAlignment="Top" Width="75" Height="26" RenderTransformOrigin="-0.004,0.565" Click="ConnectButton_Click"/>
 
     </Grid>
 </Window>

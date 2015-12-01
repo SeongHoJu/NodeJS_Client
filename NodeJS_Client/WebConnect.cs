@@ -19,17 +19,27 @@ namespace NodeJS_Client
         public void ConnectWebSocket(string Address)
         {
             Socket = new WebSocket(Address, "connection");
+            Socket.OnOpen += ServerToClientConnected;
             Socket.OnMessage += ServerToClientOnMessage;
             Socket.OnClose += ServerToClientDisconnected;
 
             Socket.Connect();
         }
 
+        public void ReConnectWebSocket(string Address)
+        {
+            if( Socket != null )
+                Socket.Close();
+
+            Socket = null;
+            ConnectWebSocket(Address);
+        }
+
         public async void ServerToClientOnMessage(object sender, MessageEventArgs e)
         {
             Task<JSonPacket> PacketTask = JsonConvert.DeserializeObjectAsync<JSonPacket>(e.Data);
             JSonPacket ReceivePacket = await PacketTask;
-
+            
             if (ReceivePacket.Protocol == "request_login")
                 request_login_OK(ReceivePacket);
             else if (ReceivePacket.Protocol == "request_chat")
@@ -37,9 +47,14 @@ namespace NodeJS_Client
         }
 
 
-        public void ServerToClientDisconnected(object sender, CloseEventArgs e)
+        public async void ServerToClientConnected(object sender, EventArgs e)
         {
-            
+            appWin.SetLogText("Connect to Server");
+        }
+        
+        public async void ServerToClientDisconnected(object sender, CloseEventArgs e)
+        {
+            appWin.SetLogText("Disconnected from Server");
         }
 
         public void SendPacket(JSonPacket Packet)

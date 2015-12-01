@@ -4329,3 +4329,1739 @@
 2015-11-27 오전 10:28:26|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
 2015-11-27 오전 10:28:27|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
 2015-11-27 오전 10:28:27|Error|WebSocket.Send:0|The WebSocket connection has already been closed.
+2015-12-01 오후 5:46:02|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: uH/iagDk906doIhUexRdHA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 5:46:02|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 9Prfjfc5DHDXFVfdM5Ixis9lsSs=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:36|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: PoBBpt0tDTMF4PpeoquP6Q==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:36|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 27va1lG5lvMQVR4Bxe++JU9K60k=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:36|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Error parsing boolean value. Path '', line 0, position 0.
+                               at Newtonsoft.Json.JsonTextReader.ParseFalse()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:36|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:36|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:36|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:36|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:36|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:40|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: kOcZrvhFmSoDMLi9yPRsGw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:40|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: KVJBu4mA7jpTuUufN3Y8rwlMqyE=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:40|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Error parsing boolean value. Path '', line 0, position 0.
+                               at Newtonsoft.Json.JsonTextReader.ParseFalse()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:40|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:40|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:40|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:40|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:40|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:41|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: KcrgwL6y0ZKmWV0SgdN8NA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:41|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: K5FqmAuesIBKpw2pZpOJZE7jD2E=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:41|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Error parsing boolean value. Path '', line 0, position 0.
+                               at Newtonsoft.Json.JsonTextReader.ParseFalse()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:41|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:41|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:41|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:41|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:41|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:41|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: RkEPAOKbxoW3Q2vbxvez1Q==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:41|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: ZZ24R7gBD57xqrR+vp61jQph7IM=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:41|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Error parsing boolean value. Path '', line 0, position 0.
+                               at Newtonsoft.Json.JsonTextReader.ParseFalse()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:41|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:41|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:41|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:41|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:41|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:42|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: UUWxahbkGopmdslPxUKVuA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:42|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: b0+vowYiDgYEFCDY7zwDFyLSfBA=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:42|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '00060e80-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:42|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:42|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:42|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:42|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:42|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:42|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: X22hTon1iDKmgO4OhmaeOg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:42|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: CH++vYy1xE/gdIhvaaWdOyYcchg=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:42|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '002fdda0-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:42|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:42|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:42|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:42|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:42|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:42|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 29o5Hyx5yqY4v4Oa+yF2sQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:42|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: FT0FwpuGuMQ4bArjpr/rBmk4J68=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:42|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '0064d050-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:42|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:42|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:42|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:42|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:42|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:43|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: +na22I0q2T3agFivAiDU8Q==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:43|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: sacJHDErogmdeC0GSY0jPx+t5c8=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:43|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '00a5a9e0-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:43|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:43|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:43|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:43|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:43|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:43|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: duNPqjGvG7Jtv+47d9usaA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:43|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: zBGFjK08MHrGxwPI3KQTvW1HPzY=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:43|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '00db5fe0-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:43|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:43|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:43|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:43|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:43|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:43|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: PmaIOhilmrWwJXRSNhNWUg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:43|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 1nstHOiijTND31UxFtrj3gGZ5G4=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:43|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '00ff3b90-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:43|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:43|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:43|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:43|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:43|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 1tvmxKHq5qbpddRh+xIcAg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: NUJNPiDrReIlAfwD8hPSpHPIM7U=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '01316f20-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:44|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:44|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: V5IbiMD/XGGeYvaE9YJBtg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 77i6TIl2XRw4DU5gqaywn2leefI=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '01568350-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:44|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:44|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: qWHBv70puK7bD7jsuZSozw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: Uniq0VpW4245L8CLdlmucJPFQJM=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '01850d60-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:44|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:44|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 5XJAL1EkP8WTWD1nsBdv7A==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:44|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: KghloUdjfWIyLXxHstc9cLRS/IU=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '01a5b4c0-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:44|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:44|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:44|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:44|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:45|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: NRyY7RGGgm4+LjiCsU6wZg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:45|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: Qq1upf5U16pa1q1mZ9Wx3f0O/ls=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:45|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '01d9e420-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:45|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:45|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:45|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:45|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:45|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:45|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: AMQg9jZFGxUSa4XkM2GA7w==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:45|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: SQl2LgDwDeGb4W4BCXQabG2yD8c=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:45|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '01f6baf0-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:45|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:45|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:45|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:45|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:45|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:45|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: UpPHLTRveGFPGEdL9nPnCA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:45|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: eN05H0qgD1N3y5TA5esw0r3e4aI=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:45|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '02243390-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:45|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:45|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:45|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:45|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:45|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:00:46|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 45g6TQNcdWjV5VR5dOI63A==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:00:46|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 7fIrmhpcIPkfkXc6O+CAJTUNTD0=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:00:46|Fatal|WebSocket.processException:0|Newtonsoft.Json.JsonReaderException: Input string '026ab270-980a-11e5-9fe8-fded4b743f5e' is not a valid number. Path '', line 1, position 36. ---> System.FormatException: Additional non-parsable characters are at the end of the string.
+                               at System.ParseNumbers.StringToLong(String s, Int32 radix, Int32 flags, Int32* currPos)
+                               at System.Convert.ToInt64(String value, Int32 fromBase)
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               --- End of inner exception stack trace ---
+                               at Newtonsoft.Json.JsonTextReader.ParseNumber()
+                               at Newtonsoft.Json.JsonTextReader.ParseValue()
+                               at Newtonsoft.Json.JsonTextReader.ReadInternal()
+                               at Newtonsoft.Json.JsonTextReader.Read()
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+                               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+                               at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+                               at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+                               at NodeJS_Client.WebConnect.ServerToClientOnMessage(Object sender, MessageEventArgs e) in C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\WebConnect.cs:line 40
+                               at WebSocketSharp.Ext.Emit[TEventArgs](EventHandler`1 eventHandler, Object sender, TEventArgs e)
+                               at WebSocketSharp.WebSocket.<>c__DisplayClass15.<startReceiving>b__13(WebSocketFrame frame)
+2015-12-01 오후 6:00:46|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:00:46|Debug|WebSocket.closeHandshake:0|Was clean?: False
+                              sent: False
+                              received: True
+2015-12-01 오후 6:00:46|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:00:46|Fatal|WebSocket.processException:0|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                               at WebSocketSharp.WebSocketFrame.<>c__DisplayClass7.<ReadAsync>b__6(Byte[] header)
+                               at WebSocketSharp.Ext.<>c__DisplayClass6.<ReadBytesAsync>b__5(IAsyncResult ar)
+2015-12-01 오후 6:00:46|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:01:02|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: jCZlW7NqY6k1oJF65bG9fQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:01:02|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: HugwtYNaXsK/E1eYzggUdxpid5w=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:01:21|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: BmM0rWB6ZybewGu3gVj3nA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:01:22|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: FbKW3SQ+0XpQ1csTL/CQIoS5sSM=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:01:58|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: fms+zPfqoaiPIYikRsBm3g==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:01:58|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 7tHiclVoZXtgmubuNzu4mtIn+M8=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:04:01|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: deRVRIgF66P15Vr78Gy25A==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:04:01|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: GUU9nYRqegLAhv6KPf3fepUmPiA=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:04:03|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: La21Ha+FBHUT0VJg4lBHBg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:04:03|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: WeSKS51GBKCHd07tU/1ygMcPp8c=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:04:14|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: NlD93sLgPblbPJwz73nSmg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:04:14|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: pTZJIY82MpHGqTa/s5orDuxBsPY=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:04:21|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: CAJuTuxuYYa63tgNxt3p2A==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:04:21|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: LNcegAp5FRLGCVC59nHbY46Rjis=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:48|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: wV+rnzxL33SYtEuo38psGw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:48|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: /oGePTvYJZvAwbwfFDlI3wTGLmM=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: CS19lzK39U08bFA6Tx1REg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: NKhlWfWaFL5jmnMwUVxeia1J01k=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 1NUFoFh2jvMQqZ2c0S8gmg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: /rNbOGyD7vmD2DNyhc64UYTEFYc=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: WtfWVfIaOPbnQ0tWUFSSjA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: CzMcQzTrLaTdZwaYTYtihVu0Kws=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: JH9eXhfZ0Zy7gJi40mdiFQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 63iQotJs4vVEoGq/dj6cVHddoAY=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 7yflZz2XakOPveUaU3kxnQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:50|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: vjr4ch+0ZBCRB89DGJHftJXkaGw=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 5ZKtg0Z3ArZKYsvtSA+ZIw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: YERoVzcToJvEZYC6vKSeRjTf83U=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: sDo0jGs2m1wfnxhPyiFprA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: M/PDgviYeuU4LIZh0ELOXTfK6SM=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: NTsFQgbaRV/2OccISUbanQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: OI1p7y2qN/Ph0ul/mSVK9G3m1iE=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: SK+SF/R75k1Y8HhekCAvXA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 4YD03LM2z951guSb8KicVOB6ddw=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: heVeAMU9hwihD8MkSn4bFw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:51|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: BhTrdjuqBnSageXH4B6Qg8HHWhY=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:53|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: hXnCpbWfqSJNdR99ASkxcA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:53|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: i74uyqGnFsS88rfAdfqsP+aWjvQ=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: GsnStwAb22/277hBBE7RgQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 3wQ+eD/EBV3Tfi5pWIjSxWx0pn8=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: WACen9LefCo/DgMHv6u9PQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 5SKCSKO5L3bMA+Ec8jttCU76mc4=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: ljZqiKSgHeSILU7NeQmq+A==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: eozTF2KhRDWJZKlA9S+JMge3N2E=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: qKn3XZJBvtPq5f8jv+P+tw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 9ckeHXxLgXsFjsJjoE3uXQ/waN8=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 5uDDRmMDX400BEnpekDrcg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: /T8/9A/aCdknplWGyV1aR/GNRhE=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: +FNPHFKjAXyWu/o/wBo/MQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:05:54|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: TXlw0ZoK1Wb4oUM5dpVEqfTlFo8=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:10|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: mQImOAowtVzYGqAY9XkGjg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:10|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: f2vkod0dzyBL9wdqzVp8L/ZW00E=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:12|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: zl5sWxP8KkYaG/RVH/KWxg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:12|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 7BMTNlA6/GPiEMDORiIO+nAU6p4=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:12|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 2WEOxUdFfkrJTlHJHTx4qQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:12|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: sQfyfH9UHdhhsMZD2q5UaN4ekYw=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 99g9Bmsucz7ZOGCSYmGvSw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 8y9IGgsOTBTvxWaRj2iTDpYS/GA=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Mum7df4o+lWSgeUNWuN1Zw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: l4pBGDSqPcGyj7/IgH4qKqkcdgk=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: RVxIS+3JnEP0OJZioL3KJg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: JLzIC2f1jfQ2XxJh/Rmsd1bNwFc=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: gpMUM76LPf49V+AoWxu24g==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: XvG2NDpsM0iDqmz0wIExMcpWSl0=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: TTubPORJ1qQRlC2K3C2Gag==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:13|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: NgIN2Qb+hr7Vf3fWkhOAn+OpSpU=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 0z1s8n7ugKfoLtxEW1L3XA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: PxjH3g/OcJXR5Sc3xugHnSovNlQ=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: neT0+6SsGE69aymm3WXH5Q==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: gMvVVv/qoRVCKq6+ipmzVgR8np8=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 2xvA43VuuQgGinRtl8K0oA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: jRW71jN+M0/AYf1WIrTnM/J01VM=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 7Y5NuWMPW/doQSXC3pwIXw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: OcEXgRVx5FIrVxHbeorbyH7wtpo=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 5PkU1Wzv82kj5wuV0zJw5A==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:14|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: aWlqk174iQVVqnVtTesYe7YK+X8=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 9EdTMR3Ie7T0x/afVzGfBA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 7hdXzDJnmu7djoccoNXOGCCGWgY=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: dyTWbnmkCxM6it4NE3zqVw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: xTrGVzP4/6LDAj6byWIa3Y2OxZk=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: hnIUyip9k18LaskYl3sYdw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 5Hrs0mOj8NTOczL8EKncZZXA+cY=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: T/ROWhFzEWJO0U8uVrPCYQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 5lcdShePqgct2XxvWf6nooUZZmE=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: GZzVYzcxqgkiDZyQ2MWS6g==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:15|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: PYclN9UgDXx8PcjyAgjqZ1x1yFk=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:16|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: V9OiTAn0S8NsLedXkiN+pg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:16|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: bJPCy9LyIBU761Ff+z0OVnlef+Y=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:16|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 3dRzAaOY9cVDxpYQEUjwlw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:16|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: RDzTCYUhb1iqn++ukHE9pPevxVQ=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:20|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Xtq9h+A4yVjhVDYwPOlmmw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:20|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: rxqMAHbl3aC/KMCUqO1yjXdeP1c=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:20|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: cU1KXc7YakdDC+eGg8O7WQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:20|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 3tpRfvnQ+EL+QoCrzqgg/tpGlFk=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:20|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: roMWRp+bCwGMKzFMPSGnFQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:20|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: y+jWGk8YjqZv0u4qJ9at7vlC5Is=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:06:31|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: PSgvvEya7kirLyvYyW+jmg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:06:31|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: rKB2oCmfYLhZVIZbiFhv9ipagKA=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:06|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: avn4gITzAcupLRXLrw8KeA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:06|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: e5yvk8uA5zp7FTeJeCMTm2sH/sU=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:08|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:08|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:08|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:08|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:08|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: grrvcxuu5JFD0PNWJikKNA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:08|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: bMHFBJr69zSxNwdjES5ay1qMysw=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:09|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:09|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:09|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:09|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:09|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: +LjKY/V7Vo8d7ZVkqPU/lQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:09|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: STwD/s3vQwuB5P5hXOnkZUDktiA=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:10|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:10|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:10|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:10|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:10|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: BCvWVWjslgo1+Dgdmh9r4A==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:10|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: qZ1tNP1Q2JDhtObuFRNZ1yvKebI=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:11|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:11|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:11|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:11|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:11|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 5//wrDUE8F74cgay26EmzQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:11|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: /1LeByJ8jgGENPbB3dKY0lY5ZjE=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:11|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:11|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:11|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:11|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:11|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Ml6seHnX/8CBm3U3ViMbCg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:11|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: On2koqfeqHYq7LheKmqdrnZ2fnA=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:12|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:12|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: fr1pRL2qDiIKxOS80qUQRw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: lpXSRLHwuJdbXi7cpQAhv9+xWaQ=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:12|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:12|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: icELr/LyYie490Iw0PDyKQ==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: b02rU4jtDW9Zs9EvOw24O6se8WI=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:12|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:12|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 4NpO2Gut8roXUpEuGbelgA==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: XPACb5enNdNpZLrXXZmsJRqlbsc=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:12|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:12|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:12|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Y7fRFMiJghleFHqc1gHx0g==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:12|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: ePh/GgXNv1nQUT5Br3ytil8r/Ik=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:13|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:13|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:13|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:13|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:13|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: oe2d/ZpMI9OnNMRikF/djg==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:13|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: gtTGQZaNo5sbHwWGOYKOnPvXGpc=
+                            Sec-WebSocket-Protocol: connection
+2015-12-01 오후 6:08:13|Trace|WebSocket.close:0|Begin closing the connection.
+2015-12-01 오후 6:08:13|Info |WebSocket.close:0|Closing the connection has already been done.
+2015-12-01 오후 6:08:13|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                              sent: True
+                              received: True
+2015-12-01 오후 6:08:13|Trace|WebSocket.close:0|End closing the connection.
+2015-12-01 오후 6:08:13|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                            GET / HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: bJUlBr8KvHp7cRHEEnGtFw==
+                            Sec-WebSocket-Protocol: connection
+                            Sec-WebSocket-Version: 13
+2015-12-01 오후 6:08:13|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: cIcdk6Yc6SUmmHGbUTwLJvPMV/U=
+                            Sec-WebSocket-Protocol: connection

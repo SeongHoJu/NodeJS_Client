@@ -14,3 +14,20 @@ C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Clie
 C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.csproj.GenerateResource.Cache
 C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.exe
 C:\Users\SeongHo\Documents\Visual Studio 2015\Projects\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.pdb
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\bin\Release\NodeJS_Client.exe.config
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.exe
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.pdb
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\bin\Release\NodeJS_Client.exe
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\bin\Release\NodeJS_Client.pdb
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\bin\Release\Newtonsoft.Json.dll
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\bin\Release\websocket-sharp-with-proxy-support.dll
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\bin\Release\Newtonsoft.Json.xml
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.csprojResolveAssemblyReference.cache
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\MainWindow.g.cs
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\App.g.cs
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client_MarkupCompile.cache
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client_MarkupCompile.lref
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\MainWindow.baml
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.g.resources
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.Properties.Resources.resources
+C:\Users\SeongHo\Documents\GitHub\NodeJS_Client\NodeJS_Client\obj\Release\NodeJS_Client.csproj.GenerateResource.Cache
